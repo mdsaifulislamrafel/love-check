@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>love calculator</title>
+  </head>
+  <style>
+    body {
+      background-image: url(background.png);
+    }
+    .heading {
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      font-size: 3em;
+    }
+    #container {
+      width: 60%;
+      margin: auto;
+      text-align: center;
+    }
+    #first-inp,
+    #secound-inp,
+    #btn-love {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+    #btn-love:hover {
+      cursor: pointer;
+      border: 1px solid red;
+    }
+    .result {
+      border: 1px solid rgba(203, 203, 203, 0.445);
+      color: white;
+      box-shadow: 2px 2px 2px 2px rgba(58, 58, 58, 0.333);
+    }
+  </style>
+  <body>
+    <div id="container">
+      <div class="result">
+        <h1 id="output">%</h1>
+      </div>
+      <h1 class="heading">calculate your love in %</h1>
+      <div>
+        <input id="first-input" type="text" placeholder="your name" />
+        <input id="second-input" type="text" placeholder="your love name" />
+      </div>
+      <button
+        onclick="clickMe()"
+        style="width: 10rem; font-weight: bold"
+        id="btn-love"
+      >
+        Love in %
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
